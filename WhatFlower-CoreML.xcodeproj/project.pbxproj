@@ -11,6 +11,12 @@
 		11C3631127902C5B00A32498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C3631027902C5B00A32498 /* ContentView.swift */; };
 		11C3631327902C6300A32498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C3631227902C6300A32498 /* Assets.xcassets */; };
 		11C3631627902C6300A32498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C3631527902C6300A32498 /* Preview Assets.xcassets */; };
+		11F13D1D27903F7A00C32E86 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11F13D1C27903F7A00C32E86 /* FlowerClassifier.mlmodel */; };
+		11F13D21279055C300C32E86 /* FlowerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13D20279055C300C32E86 /* FlowerManager.swift */; };
+		11F13D2B279065EC00C32E86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13D2A279065EC00C32E86 /* ImagePicker.swift */; };
+		11F13D2D279078D700C32E86 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13D2C279078D600C32E86 /* ImagePickerCoordinator.swift */; };
+		11F13D2F2790856900C32E86 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13D2E2790856900C32E86 /* FlowerView.swift */; };
+		F079455C142F4121A0278EB7 /* Pods_WhatFlower_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7588DC87D0780F631E9D8807 /* Pods_WhatFlower_CoreML.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,14 @@
 		11C3631027902C5B00A32498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11C3631227902C6300A32498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C3631527902C6300A32498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11F13D1C27903F7A00C32E86 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		11F13D20279055C300C32E86 /* FlowerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerManager.swift; sourceTree = "<group>"; };
+		11F13D2A279065EC00C32E86 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		11F13D2C279078D600C32E86 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		11F13D2E2790856900C32E86 /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
+		17BF67C75227DB0BBE67680C /* Pods-WhatFlower-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower-CoreML.debug.xcconfig"; path = "Target Support Files/Pods-WhatFlower-CoreML/Pods-WhatFlower-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		7588DC87D0780F631E9D8807 /* Pods_WhatFlower_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatFlower_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC0895D9BEE754CC4AA54B8 /* Pods-WhatFlower-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower-CoreML.release.xcconfig"; path = "Target Support Files/Pods-WhatFlower-CoreML/Pods-WhatFlower-CoreML.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F079455C142F4121A0278EB7 /* Pods_WhatFlower_CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +52,8 @@
 			children = (
 				11C3630D27902C5B00A32498 /* WhatFlower-CoreML */,
 				11C3630C27902C5B00A32498 /* Products */,
+				E4881A8A126CA13299978286 /* Pods */,
+				FF0D6288C4A45B54DBCC2414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				11C3630E27902C5B00A32498 /* WhatFlower_CoreMLApp.swift */,
-				11C3631027902C5B00A32498 /* ContentView.swift */,
+				11F13D1E2790558B00C32E86 /* Views */,
+				11F13D1F2790559B00C32E86 /* Model */,
 				11C3631227902C6300A32498 /* Assets.xcassets */,
+				11F13D1C27903F7A00C32E86 /* FlowerClassifier.mlmodel */,
 				11C3631427902C6300A32498 /* Preview Content */,
 			);
 			path = "WhatFlower-CoreML";
@@ -67,6 +86,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		11F13D1E2790558B00C32E86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11C3631027902C5B00A32498 /* ContentView.swift */,
+				11F13D2A279065EC00C32E86 /* ImagePicker.swift */,
+				11F13D2E2790856900C32E86 /* FlowerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11F13D1F2790559B00C32E86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11F13D20279055C300C32E86 /* FlowerManager.swift */,
+				11F13D2C279078D600C32E86 /* ImagePickerCoordinator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4881A8A126CA13299978286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17BF67C75227DB0BBE67680C /* Pods-WhatFlower-CoreML.debug.xcconfig */,
+				EEC0895D9BEE754CC4AA54B8 /* Pods-WhatFlower-CoreML.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF0D6288C4A45B54DBCC2414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7588DC87D0780F631E9D8807 /* Pods_WhatFlower_CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11C3631927902C6300A32498 /* Build configuration list for PBXNativeTarget "WhatFlower-CoreML" */;
 			buildPhases = (
+				C384B907B7AD3CA842297E48 /* [CP] Check Pods Manifest.lock */,
 				11C3630727902C5B00A32498 /* Sources */,
 				11C3630827902C5B00A32498 /* Frameworks */,
 				11C3630927902C5B00A32498 /* Resources */,
+				02E95C5F7A7FAAAA83CF81A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +189,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02E95C5F7A7FAAAA83CF81A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower-CoreML/Pods-WhatFlower-CoreML-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower-CoreML/Pods-WhatFlower-CoreML-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatFlower-CoreML/Pods-WhatFlower-CoreML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C384B907B7AD3CA842297E48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatFlower-CoreML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11C3630727902C5B00A32498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F13D21279055C300C32E86 /* FlowerManager.swift in Sources */,
+				11F13D1D27903F7A00C32E86 /* FlowerClassifier.mlmodel in Sources */,
+				11F13D2D279078D700C32E86 /* ImagePickerCoordinator.swift in Sources */,
 				11C3631127902C5B00A32498 /* ContentView.swift in Sources */,
+				11F13D2B279065EC00C32E86 /* ImagePicker.swift in Sources */,
+				11F13D2F2790856900C32E86 /* FlowerView.swift in Sources */,
 				11C3630F27902C5B00A32498 /* WhatFlower_CoreMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +367,7 @@
 		};
 		11C3631A27902C6300A32498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF67C75227DB0BBE67680C /* Pods-WhatFlower-CoreML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,6 +377,7 @@
 				DEVELOPMENT_TEAM = 78C9PH79UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Чтобы можно было распознавать изображения - требуется доступ к камере";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,6 +398,7 @@
 		};
 		11C3631B27902C6300A32498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC0895D9BEE754CC4AA54B8 /* Pods-WhatFlower-CoreML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +408,7 @@
 				DEVELOPMENT_TEAM = 78C9PH79UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Чтобы можно было распознавать изображения - требуется доступ к камере";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
